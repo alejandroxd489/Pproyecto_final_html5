@@ -1,77 +1,88 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Guía de Viaje</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
 
-/* FONDO TIPO VIAJE */
-body{
-    background: linear-gradient(to bottom, #00b4db, #0083b0, #f5d6a0);
-    color:white;
-}
+<body>
 
-/* NAV */
-.nav{
-    background:#006994;
-    padding:15px;
-    text-align:center;
-}
+<div class="nav">
+    <a href="#inicio">Inicio</a>
+    <a href="#info">Información</a>
+    <a href="#lugares">Lugares</a>
+    <a href="#cultura">Cultura</a>
+    <a href="#galeria">Galería</a>
+    <a href="#conclusion">Conclusión</a>
+    <a href="#contacto">Contacto</a>
+</div>
 
-.nav a{
-    color:white;
-    margin:10px;
-    text-decoration:none;
-    font-weight:bold;
-}
+<section class="seccion">
+<article class="card">
 
-.nav a:hover{
-    text-decoration:underline;
-}
+<h2>🌎 GUÍA DE VIAJE</h2>
 
-/* CONTENIDO */
-.seccion{
-    display:flex;
-    justify-content:center;
-    padding:20px;
-}
+<h3 id="inicio">Inicio</h3>
+<div class="imagenes">
+<img src="img/inicio1.jpg">
+<img src="img/inicio2.jpg">
+</div>
+<p>Bienvenido a este destino turístico increíble.</p>
+<button onclick="abrir('m1')">Ver más</button>
 
-/* CARD PRINCIPAL */
-.card{
-    background:white;
-    color:black;
-    width:80%;
-    padding:20px;
-    border-radius:15px;
-    box-shadow:0 10px 20px rgba(0,0,0,0.3);
-}
+<h3 id="info">Información</h3>
+<div class="imagenes">
+<img src="img/info1.jpg">
+<img src="img/info2.jpg">
+</div>
+<p>Datos importantes del lugar.</p>
+<button onclick="abrir('m2')">Ver más</button>
 
-/* TITULOS */
-h2{
-    text-align:center;
-    margin-bottom:10px;
-}
+<h3 id="lugares">Lugares turísticos</h3>
+<div class="imagenes">
+<img src="img/lugar1.jpg">
+<img src="img/lugar2.jpg">
+</div>
+<p>Sitios más visitados.</p>
+<button onclick="abrir('m3')">Ver más</button>
 
-h3{
-    margin-top:20px;
-    color:#0077b6;
-}
+<h3 id="cultura">Cultura</h3>
+<div class="imagenes">
+<img src="img/comida1.jpg">
+<img src="img/comida2.jpg">
+</div>
+<p>Tradiciones y comida típica.</p>
+<button onclick="abrir('m4')">Ver más</button>
 
-/* IMAGENES */
-img{
-    width:100%;
-    margin-top:10px;
-    border-radius:10px;
-}
+<h3 id="galeria">Galería</h3>
+<div class="imagenes">
+<img src="img/g1.jpg">
+<img src="img/g2.jpg">
+</div>
+<button onclick="abrir('m5')">Ver más</button>
 
-/* TEXTO */
-p{
-    margin-top:10px;
-    line-height:1.5;
-}
+<h3 id="conclusion">Conclusión</h3>
+<p>Un destino ideal para visitar.</p>
+<button onclick="abrir('m6')">Ver más</button>
 
-/* LISTAS */
-ul{
-    margin-top:10px;
-    padding-left:20px;
-}
+<h3 id="contacto">Contacto</h3>
+<p>Email: ejemplo@gmail.com</p>
+<button onclick="abrir('m7')">Ver más</button>
+
+</article>
+</section>
+
+<!-- MODALES -->
+
+<div id="m1" class="modal"><div class="contenido"><span onclick="cerrar('m1')">X</span><h2>Inicio</h2><p>Información más detallada del inicio.</p></div></div>
+<div id="m2" class="modal"><div class="contenido"><span onclick="cerrar('m2')">X</span><h2>Información</h2><p>Más detalles del lugar.</p></div></div>
+<div id="m3" class="modal"><div class="contenido"><span onclick="cerrar('m3')">X</span><h2>Lugares</h2><p>Detalles de sitios turísticos.</p></div></div>
+<div id="m4" class="modal"><div class="contenido"><span onclick="cerrar('m4')">X</span><h2>Cultura</h2><p>Detalles culturales.</p></div></div>
+<div id="m5" class="modal"><div class="contenido"><span onclick="cerrar('m5')">X</span><h2>Galería</h2><p>Más imágenes del lugar.</p></div></div>
+<div id="m6" class="modal"><div class="contenido"><span onclick="cerrar('m6')">X</span><h2>Conclusión</h2><p>Opinión final.</p></div></div>
+<div id="m7" class="modal"><div class="contenido"><span onclick="cerrar('m7')">X</span><h2>Contacto</h2><p>Más formas de contacto.</p></div></div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
