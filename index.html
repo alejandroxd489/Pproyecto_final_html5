@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Guía de Viaje</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<h1>🌎 Guía de Viaje</h1>
+
+<div class="contenedor">
+
+    <div class="card" onclick="abrir('inicio')">
+        <img src="img/inicio.jpg">
+        <p>Inicio</p>
+    </div>
+
+    <div class="card" onclick="abrir('info')">
+        <img src="img/info.jpg">
+        <p>Información del lugar</p>
+    </div>
+
+    <div class="card" onclick="abrir('lugares')">
+        <img src="img/lugares.jpg">
+        <p>Lugares turísticos</p>
+    </div>
+
+    <div class="card" onclick="abrir('gastronomia')">
+        <img src="img/comida.jpg">
+        <p>Gastronomía / Cultura</p>
+    </div>
+
+    <div class="card" onclick="abrir('galeria')">
+        <img src="img/galeria.jpg">
+        <p>Galería</p>
+    </div>
+
+    <div class="card" onclick="abrir('conclusion')">
+        <img src="img/conclusion.jpg">
+        <p>Conclusión</p>
+    </div>
+
+    <div class="card" onclick="abrir('contacto')">
+        <img src="img/contacto.jpg">
+        <p>Contacto</p>
+    </div>
+
+</div>
+
+<!-- MODALES -->
+
+<div id="inicio" class="modal">
+<div class="contenido">
+<span onclick="cerrar('inicio')">X</span>
+<h2>Inicio</h2>
+<p>Bienvenido a esta guía de viaje donde conocerás lo mejor del destino.</p>
+<img src="img/inicio.jpg">
+</div>
+</div>
+
+<div id="info" class="modal">
+<div class="contenido">
+<span onclick="cerrar('info')">X</span>
+<h2>Información del lugar</h2>
+<p>Ubicación, clima, historia y datos importantes.</p>
+<img src="img/info.jpg">
+</div>
+</div>
+
+<div id="lugares" class="modal">
+<div class="contenido">
+<span onclick="cerrar('lugares')">X</span>
+<h2>Lugares turísticos</h2>
+<p>Playas, parques y sitios más visitados.</p>
+<img src="img/lugares.jpg">
+<img src="img/lugares2.jpg">
+</div>
+</div>
+
+<div id="gastronomia" class="modal">
+<div class="contenido">
+<span onclick="cerrar('gastronomia')">X</span>
+<h2>Gastronomía / Cultura</h2>
+<p>Comida típica, tradiciones y cultura local.</p>
+<img src="img/comida.jpg">
+<img src="img/comida2.jpg">
+</div>
+</div>
+
+<div id="galeria" class="modal">
+<div class="contenido">
+<span onclick="cerrar('galeria')">X</span>
+<h2>Galería</h2>
+<img src="img/g1.jpg">
+<img src="img/g2.jpg">
+<img src="img/g3.jpg">
+</div>
+</div>
+
+<div id="conclusion" class="modal">
+<div class="contenido">
+<span onclick="cerrar('conclusion')">X</span>
+<h2>Conclusión</h2>
+<p>Un excelente destino para visitar y disfrutar.</p>
+<img src="img/conclusion.jpg">
+</div>
+</div>
+
+<div id="contacto" class="modal">
+<div class="contenido">
+<span onclick="cerrar('contacto')">X</span>
+<h2>Contacto</h2>
+<p>Email: ejemplo@gmail.com</p>
+<p>Tel: 123456789</p>
+<img src="img/contacto.jpg">
+</div>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+  </html>
