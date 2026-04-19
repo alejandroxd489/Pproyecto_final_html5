@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Guía de Viaje</title>
+<title>Tampico Tamaulipas</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -21,38 +21,48 @@
 <section class="seccion">
 <article class="card">
 
-<h2>🌎 GUÍA DE VIAJE</h2>
+<h2>🌴 Tampico, Tamaulipas</h2>
 
 <h3 id="inicio">Inicio</h3>
 <div class="imagenes">
-<img src="img/inicio1.jpg">
-<img src="img/inicio2.jpg">
+<img src="img/tampico1.jpg">
+<img src="img/tampico2.jpg">
 </div>
-<p>Bienvenido a este destino turístico increíble.</p>
+<p>Tampico es una ciudad costera ubicada en el estado de Tamaulipas, México.</p>
+<p>Es conocida por sus playas, su historia y su ambiente turístico.</p>
 <button onclick="abrir('m1')">Ver más</button>
 
 <h3 id="info">Información</h3>
 <div class="imagenes">
-<img src="img/info1.jpg">
-<img src="img/info2.jpg">
+<img src="img/centro.jpg">
+<img src="img/puerto.jpg">
 </div>
-<p>Datos importantes del lugar.</p>
+<p>Tiene un clima cálido y húmedo, ideal para disfrutar del mar.</p>
+<p>También es un importante puerto comercial.</p>
 <button onclick="abrir('m2')">Ver más</button>
 
 <h3 id="lugares">Lugares turísticos</h3>
 <div class="imagenes">
-<img src="img/lugar1.jpg">
-<img src="img/lugar2.jpg">
+<img src="img/miramar.jpg">
+<img src="img/laguna.jpg">
 </div>
-<p>Sitios más visitados.</p>
+<ul>
+<li>Playa Miramar</li>
+<li>Laguna del Carpintero</li>
+<li>Centro histórico</li>
+</ul>
 <button onclick="abrir('m3')">Ver más</button>
 
-<h3 id="cultura">Cultura</h3>
+<h3 id="cultura">Gastronomía / Cultura</h3>
 <div class="imagenes">
 <img src="img/comida1.jpg">
 <img src="img/comida2.jpg">
 </div>
-<p>Tradiciones y comida típica.</p>
+<ul>
+<li>Mariscos frescos</li>
+<li>Jaiba rellena</li>
+<li>Ceviche</li>
+</ul>
 <button onclick="abrir('m4')">Ver más</button>
 
 <h3 id="galeria">Galería</h3>
@@ -63,11 +73,11 @@
 <button onclick="abrir('m5')">Ver más</button>
 
 <h3 id="conclusion">Conclusión</h3>
-<p>Un destino ideal para visitar.</p>
+<p>Tampico es un destino turístico ideal para descansar y disfrutar del mar.</p>
 <button onclick="abrir('m6')">Ver más</button>
 
 <h3 id="contacto">Contacto</h3>
-<p>Email: ejemplo@gmail.com</p>
+<p>Email: turismo@tampico.com</p>
 <button onclick="abrir('m7')">Ver más</button>
 
 </article>
@@ -75,13 +85,19 @@
 
 <!-- MODALES -->
 
-<div id="m1" class="modal"><div class="contenido"><span onclick="cerrar('m1')">X</span><h2>Inicio</h2><p>Información más detallada del inicio.</p></div></div>
-<div id="m2" class="modal"><div class="contenido"><span onclick="cerrar('m2')">X</span><h2>Información</h2><p>Más detalles del lugar.</p></div></div>
-<div id="m3" class="modal"><div class="contenido"><span onclick="cerrar('m3')">X</span><h2>Lugares</h2><p>Detalles de sitios turísticos.</p></div></div>
-<div id="m4" class="modal"><div class="contenido"><span onclick="cerrar('m4')">X</span><h2>Cultura</h2><p>Detalles culturales.</p></div></div>
-<div id="m5" class="modal"><div class="contenido"><span onclick="cerrar('m5')">X</span><h2>Galería</h2><p>Más imágenes del lugar.</p></div></div>
-<div id="m6" class="modal"><div class="contenido"><span onclick="cerrar('m6')">X</span><h2>Conclusión</h2><p>Opinión final.</p></div></div>
-<div id="m7" class="modal"><div class="contenido"><span onclick="cerrar('m7')">X</span><h2>Contacto</h2><p>Más formas de contacto.</p></div></div>
+<div id="m1" class="modal"><div class="contenido"><span onclick="cerrar('m1')">X</span><h2>Inicio</h2><p>Tampico combina historia, cultura y playas, siendo uno de los destinos más importantes del noreste de México.</p></div></div>
+
+<div id="m2" class="modal"><div class="contenido"><span onclick="cerrar('m2')">X</span><h2>Información</h2><p>Fue fundado en 1823 y ha sido clave en el desarrollo petrolero del país.</p></div></div>
+
+<div id="m3" class="modal"><div class="contenido"><span onclick="cerrar('m3')">X</span><h2>Lugares</h2><p>Playa Miramar es la más visitada, famosa por su arena y el Golfo de México.</p></div></div>
+
+<div id="m4" class="modal"><div class="contenido"><span onclick="cerrar('m4')">X</span><h2>Cultura</h2><p>La gastronomía destaca por los mariscos frescos y sabores únicos de la región.</p></div></div>
+
+<div id="m5" class="modal"><div class="contenido"><span onclick="cerrar('m5')">X</span><h2>Galería</h2><p>Imágenes representativas del puerto y sus paisajes.</p></div></div>
+
+<div id="m6" class="modal"><div class="contenido"><span onclick="cerrar('m6')">X</span><h2>Conclusión</h2><p>Un excelente lugar para vacacionar en familia o con amigos.</p></div></div>
+
+<div id="m7" class="modal"><div class="contenido"><span onclick="cerrar('m7')">X</span><h2>Contacto</h2><p>Más información en oficinas de turismo locales.</p></div></div>
 
 <script src="js/app.js"></script>
 </body>
